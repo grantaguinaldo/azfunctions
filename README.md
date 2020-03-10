@@ -23,3 +23,4 @@ dependencies:
 - Inside of the resource group that you created, next add an azure storage account by searching for `Storage account - blob, file, table, queue`. Create a storage account under your resource group with the name `gtaazfunctions`.
 - Once the storage account has been created, click `Deploy to Function App`. In the popup window, click `Create new Function App in Azure ... (Advanced)`.
 - Name the app `socalgas-ee-poc-scrape`, select runtime as `Python 3.7`, select `Consumption` hosting plan, select the resource group to deploy this function, in this case it's `az-functions`, then select storage account connected to this function, `gtaazfunctions` and lastly for the application insights, click `Skip for now`. Once all that has been selected, press enter and the function will deploy in Azure.
+- Be sure that whatever libraries are added to `pip` are also included in the `requirements.txt` file.
